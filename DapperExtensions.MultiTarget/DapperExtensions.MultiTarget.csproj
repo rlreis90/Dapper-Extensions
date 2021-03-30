@@ -3,7 +3,7 @@
   <PropertyGroup>
     <!--<TargetFramework>netstandard2.0</TargetFramework>-->
     <!--<TargetFrameworks>netstandard2.0;net45;net40</TargetFrameworks>-->
-    <TargetFrameworks>netstandard2.0;net45;net40</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net45;net40;netstandard2.1</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>A small library that complements Dapper by adding basic CRUD operations (Get, Insert, Update, Delete) for your POCOs. For more advanced querying scenarios, Dapper Extensions provides a predicate system.</Description>
     <PackageReleaseNotes>1.6.2 / 1.6.3
@@ -65,8 +65,8 @@
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-    <PackageReference Include="Dapper" Version="2.0.30" />
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' or '$(TargetFramework)' == 'netstandard2.1'">
+    <PackageReference Include="Dapper" Version="2.0.78" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
   </ItemGroup>
 
