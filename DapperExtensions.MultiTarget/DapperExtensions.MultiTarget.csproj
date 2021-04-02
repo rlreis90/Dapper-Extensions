@@ -6,7 +6,9 @@
     <TargetFrameworks>netstandard2.0;net45;net40;netstandard2.1</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>A small library that complements Dapper by adding basic CRUD operations (Get, Insert, Update, Delete) for your POCOs. For more advanced querying scenarios, Dapper Extensions provides a predicate system.</Description>
-    <PackageReleaseNotes>1.6.2 / 1.6.3
+    <PackageReleaseNotes>1.6.3.1
+      * Added support for .net core
+1.6.2 / 1.6.3
       * Exposed Ignore keys on update in usages of Implementor
 1.6.1
       * Added Oracle Dialect to 4.5
@@ -14,16 +16,19 @@
       * Added DB2 Dialect
       * Added flag to ignore All Key fields when doing an update
       * Added missing async/await methods
-      * Added unmap method to Mapper</PackageReleaseNotes>
-    <PackageProjectUrl>https://github.com/tmsmith/Dapper-Extensions.git</PackageProjectUrl>
+      * Added unmap method to Mapper
+</PackageReleaseNotes>
+    <PackageProjectUrl>https://github.com/TarkTech/Dapper-Extensions.git</PackageProjectUrl>
     <PackageLicenseUrl>http://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
     <Authors>Thad Smith, Page Brooks</Authors>
-    <PackageId>DapperExtensions</PackageId>
+    <PackageId>Tark.DapperExtensions</PackageId>
     <Version>1.6.3</Version>
-    <RepositoryUrl>https://github.com/tmsmith/Dapper-Extensions</RepositoryUrl>
+    <RepositoryUrl>https://github.com/TarkTech/Dapper-Extensions</RepositoryUrl>
     <PackageTags>orm sql micro-orm Data Dapper</PackageTags>
     <RepositoryType>git</RepositoryType>
     <Copyright>Copyright 2011 Thad Smith, Page Brooks and contributors</Copyright>
+    <AssemblyVersion>1.6.3.1</AssemblyVersion>
+    <FileVersion>1.6.3.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
